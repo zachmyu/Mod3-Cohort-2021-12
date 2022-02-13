@@ -3,7 +3,7 @@
     "endpoint": "Get all the colors",
     "request": {
       "method": "",
-      "URL": "",
+      "URL": "artists/:artistId",
       "headers": null,
       "body": null
     },

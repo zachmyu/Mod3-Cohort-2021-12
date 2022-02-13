@@ -10,7 +10,11 @@ const growPlant = makePromise('growPlant');
 
  ******************************************************************************/
 
-// Your code here
+function potPlant(seed) {
+    return addSoil()
+        .then(() => plantSeed(seed))
+        .then(seedPlanted => growPlant(seedPlanted))
+}
 
 
 /*******************************************************************************
@@ -18,12 +22,12 @@ const growPlant = makePromise('growPlant');
  */
 
 if (!exports) {
-  var exports = {};
+    var exports = {};
 }
 (function (exports) {
-  try {
-    exports.potPlant = potPlant;
-  } catch (e) {
-    exports.potPlant = () => { throw e };
-  }
+    try {
+        exports.potPlant = potPlant;
+    } catch (e) {
+        exports.potPlant = () => { throw e };
+    }
 })(exports);

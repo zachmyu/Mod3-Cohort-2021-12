@@ -8,10 +8,10 @@ API endpoints of a music archive server.
 Clone the practice from the [starter].
 
 To set up the server that you will test your endpoints on, run `npm install`
-inside of the __server__ folder. Please do not to look at the contents of the
-__server__ folder until you finish this project.
+inside of the **server** folder. Please do not to look at the contents of the
+**server** folder until you finish this project.
 
-To start the server, run `npm start` inside of the __server__ folder. This will
+To start the server, run `npm start` inside of the **server** folder. This will
 allow you to make requests to [http://localhost:5000] using any client (browser
 and Postman).
 
@@ -23,19 +23,19 @@ Windows/Linux or `CMD + c` for MacOS in the terminal that you started the server
 
 Below is a list of all the resources for this music archive server.
 
-- artists:
-  - artistId: unique identifier
-  - name
-- albums:
-  - albumId: unique identifier
-  - name
-  - artistId: of the artist that released the album
-- songs:
-  - songId: unique identifier
-  - name
-  - lyrics
-  - trackNumber: the order of the song in its album
-  - albumId: of the album that the song was released with
+-   artists:
+    -   /artist/:artistId: unique identifier
+    -   name
+-   albums:
+    -   albumId: unique identifier
+    -   name
+    -   artistId: of the artist that released the album
+-   songs:
+    -   songId: unique identifier
+    -   name
+    -   lyrics
+    -   trackNumber: the order of the song in its album
+    -   albumId: of the album that the song was released with
 
 ## Documentation
 
@@ -74,25 +74,25 @@ you as an example.
 
 Request components:
 
-- Method: GET
-- URL: /artists
-- Headers: none
-- Body: none
+-   Method: GET
+-   URL: /artists
+-   Headers: none
+-   Body: none
 
 Response components:
 
-- Status code: 200
-- Headers:
-    - Content-Type: application/json
-- Body: information about all the artists
-  ```json
-  [
-    {
-      "artistId": 1,
-      "name": "Red Hot Chili Peppers"
-    }
-  ]
-  ```
+-   Status code: 200
+-   Headers:
+    -   Content-Type: application/json
+-   Body: information about all the artists
+    ```json
+    [
+    	{
+    		"artistId": 1,
+    		"name": "Red Hot Chili Peppers"
+    	}
+    ]
+    ```
 
 Test this in Postman or by using `fetch` in the browser.
 
@@ -100,166 +100,181 @@ Test this in Postman or by using `fetch` in the browser.
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
+
+"1": {
+"endpoint": "Get a specific artist's details based on artistId",
+"request": {
+"method": "GET",
+"URL": "/artists/:artistId",
+"headers": false,
+"body": false
+},
+"response": {
+"headers": null,
+"statusCode": null,
+"body": null
+}
+},
 
 ### Add an artist
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Edit a specified artist by artistId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Delete a specified artist by artistId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Get all albums of a specific artist based on artistId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Get a specific album's details based on albumId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Add an album to a specific artist based on artistId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Edit a specified album by albumId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Delete a specified album by albumId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Get all songs of a specific artist based on artistId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Get all songs of a specific album based on albumId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Get all songs of a specified trackNumber
 
@@ -277,76 +292,76 @@ constrained by for this endpoint?
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Get a specific song's details based on songId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Add a song to a specific album based on albumId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Edit a specified song by songId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 ### Delete a specified song by songId
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+-   Method:
+-   URL:
+-   Headers:
+-   Body:
 
 Response components:
 
-- Status code:
-- Headers:
-- Body:
+-   Status code:
+-   Headers:
+-   Body:
 
 [http://localhost:5000]: http://localhost:5000
 [starter]: https://github.com/appacademy/practice-for-week-08-music-archive-docs-long-practice

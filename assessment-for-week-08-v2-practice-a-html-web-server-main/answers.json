@@ -2,8 +2,8 @@
   "1": {
     "endpoint": "Get all the colors",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/colors/",
       "headers": null,
       "body": null
     },
